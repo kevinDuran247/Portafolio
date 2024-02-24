@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudios</title>
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel='stylesheet'
+        href='https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Figtree:wght@300;600&amp;display=swap'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Etiquetas de control de caché -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- CSS importado -->
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/menuNavbar.css" rel="stylesheet">
+    <link href="css/piePagina.css" rel="stylesheet">
+    <style>
+        .fondo {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            min-height: 400px;
+            background: #000000;
+        }
+
+        .tablasEstudios {
+            position: absolute;
+            top: 20%;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .container table {
+            margin-right: 10px;
+        }
+
+
+        .table-transparent {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            width: 100%;
+        }
+
+        .table-transparent thead th,
+        .table-transparent tbody td {
+            border: 1px solid white;
+            text-align: center;
+        }
+
+        .table-transparent thead {
+            background-color: #5732fb;
+            /* Fondo semi-transparente para la cabecera */
+        }
+
+        .table-transparent tbody {
+            background-color: black;
+            /* Fondo semi-transparente para las filas */
+        }
+
+        .footer {
+            margin-top: 0;
+        }
+
+        @media (max-width: 991.98px) {
+
+            .fondo {
+                height: 950px;
+            }
+
+            .container {
+                display: block;
+            }
+
+            .container table {
+                margin-bottom: 30px !important;
+            }
+
+            .tablasEstudios {
+                top: 2%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menu -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-titulo">KEVIN DURÁN</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="fas fa-bars"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="estudios.html" class="nav-item nav-link active">Estudios</a>
+                    <a href="#" class="nav-item nav-link">Proyectos(pronto..)</a>
+                    <a href="#" class="nav-item nav-link">Descargar CV(pronto..)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin del menu -->
+
+    <div class="fondo">
+        <div class="tablasEstudios">
+
+            <div class="container table-responsive">
+
+                <table class="table-bordered table-transparent">
+                    <thead>
+                        <tr>
+                            <th scope="col">TITULOS</th>
+                            <th scope="col">Institución</th>
+                            <th scope="col">Período</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <ul>
+                                    <li>Técnico En Ingeniería De Desarrollo De Software</li>
+                                </ul>
+                            </th>
+                            <td>
+                                <img src="https://th.bing.com/th/id/OIP.28K363uF-FiNU0GcAIsy7QAAAA?rs=1&pid=ImgDetMain"
+                                    alt="Descripción de la imagen" width="240" height="50"><br>
+                                Escuela Especializada En Ingeniería ITCA-FEPADE
+                            </td>
+                            <td>2022 2023</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <ul>
+                                    <li>Técnico En Computación Administrativa</li>
+                                </ul>
+                            </th>
+                            <td>
+                                <img src="https://th.bing.com/th/id/OIP.Pr35u01cVZTxJs7u1lI1iQHaHa?rs=1&pid=ImgDetMain"
+                                    alt="Descripción de la imagen" width="90" height="90"><br>
+                                Centro Técnico Superior En Computación
+
+                            </td>
+                            <td>2016 2018</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table-bordered table-transparent">
+                    <thead>
+                        <tr>
+                            <th scope="col">CERTIFICACIONES</th>
+                            <th scope="col">Institución</th>
+                            <th scope="col">Período</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <ul>
+                                    <li>Programación JAVA Nivel Avanzado.</li>
+                                    <li>Base De Datos ORACLE nivel Basico.</li>
+                                </ul>
+                            </th>
+                            <td>
+                                <img src="https://i1.wp.com/fundeplast.org/wp-content/uploads/2018/11/insaforp.jpg?w=395"
+                                    alt="Descripción de la imagen" width="240" height="50"><br>
+                                Instituto Salvadoreño de Formación Profesional-INSAFORP
+                            </td>
+                            <td>2022 2023</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <ul>
+                                    <li>IT ESSENTIALS: PC Hardware And Software.</li>
+                                    <li>Introducción a IoT.</li>
+                                    <li> Introduction to Cybersecurity.</li>
+                                    <li>Cyber Threat Managent.</li>
+                                </ul>
+                            </th>
+                            <td>
+                                <img src="https://th.bing.com/th/id/OIP.N5eqVskqGKPUBVWMVrXzyAHaFQ?rs=1&pid=ImgDetMain"
+                                    alt="Descripción de la imagen" width="130" height="100"><br>
+                                CISCO Networking Academy (online)
+                            </td>
+                            <td>2022 2023</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <ul>
+                                    <li>Azure Fundamentals</li>
+                                </ul>
+                            </th>
+                            <td><br>
+                                <img src="https://th.bing.com/th/id/R.38e155260a8b1e6d8346ca1b08758159?rik=6wGkJvOu%2fzdE4w&riu=http%3a%2f%2f4.bp.blogspot.com%2f-PK8iwFVqTFM%2fUIbK0EezJKI%2fAAAAAAAAKsE%2fn7jm9_0b1d8%2fs1600%2fmicrosoft.jpg&ehk=pzc6z5XqGdatPqGsBsr%2fAkM8fMr9lOXSXY%2fGwVf%2fXg4%3d&risl=&pid=ImgRaw&r=0"
+                                    alt="Descripción de la imagen" width="240" height="50"><br>
+                                Microsoft
+                            </td>
+                            <td>2023 2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Pie de pagina -->
+    <div class="footer">
+
+        <div class="redesSociales">
+            <a href="https://www.facebook.com/Duran247" target="_blank" title="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/kev_induran247" target="_blank" title="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=50361735642" target="_blank" title="Whatsapp">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kevin-dur%C3%A1n-salazar-789b06218/" target="_blank" title="Linkedin">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/kevinDuran247" target="_blank" title="GitHub">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="mailto:lifestream247@gmail.com" target="_blank" title="Gmail">
+                <i class="bi bi-envelope-at-fill"></i>
+            </a>
+            <br>
+            <br>
+            © 2024 - Todos los derechos reservados | Kvn Durán
+        </div>
+
+    </div>
+    <!-- Fin pie de pagina -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

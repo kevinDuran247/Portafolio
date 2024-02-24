@@ -1,0 +1,98 @@
+
+.tituloEntornos {
+    background-color: black;
+    margin-top: 100px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: 0;
+    border-radius: 70px 0px 0px 0px;
+}
+
+.tituloEntornos h2 {
+    color: white;
+    padding-left: 120px;
+    font-weight: 700;
+    width: 100%;
+    font-size: 2.5vw;
+    margin: 0;
+    /* Añadimos esto para eliminar el margen predeterminado del h2 */
+}
+
+.carruselEntornos {
+    max-width: 600px;
+    margin: auto;
+}
+
+.slide {
+    cursor: grab;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 26px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
+    margin: 35px 35px 30px 35px;
+    background-color: #5732fb;
+}
+
+.slide h2 {
+    color: white;
+}
+
+.slide:active {
+    cursor: grabbing;
+}
+
+.imgEntorno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 330px;
+}
+
+.imgEntorno img {
+    width: 300px;
+    height: 320px;
+}
+
+/* Estilos para los dots del carusel */
+.carruselEntornos .slick-dots {
+    margin: 25px 0;
+    padding: 0;
+}
+
+.carruselEntornos .slick-dots li button {
+    border-radius: 50%;
+    /* Para hacer que los dots sean circulares */
+    background-color: #fff;
+    /* Color de fondo de los dots inactivos */
+    transition: background-color 0.3s ease;
+    /* Agregamos una transición para suavizar los cambios */
+}
+
+.carruselEntornos .slick-dots li.slick-active button {
+    background-color: #000000;
+    /* Color de fondo del dot activo */
+}
+
+@media (max-width: 980px) {
+    .tituloEntornos {
+        margin-top: 80px;
+        height: 50px;
+        width: 90%;
+    }
+
+    .tituloEntornos h2 {
+        padding-left: 40px;
+        font-size: 4vw;
+    }
+
+    .imgEntorno img {
+        width: 200px;
+        height: 220px;
+    }
+
+    .imgEntorno {
+        height: 230px;
+    }
+}
